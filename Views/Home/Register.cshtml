@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row-cols-12">
+<h1>Register a new user</h1>
+
+<form asp-controller="User" asp-action="Register" method="post">
+    <div class="row mb-1">
+        <div class="col-md-6">
+            <div>
+                <label class="w-100" for="first-name">First Name</label>
+                <input type="text" name="first_name" id="first-name" value="" autocomplete="off" class="form-control" />
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div>
+                <label class="w-100" for="last-name">Last Name</label>
+                <input type="text" name="last_name" id="last-name" value="" autocomplete="off" class="form-control" />
+            </div>
+        </div>
+        <div class="row mb-1">
+            <div class="col-md-8">
+                <div>
+                    <label class="w-100" for="email">E-Mail Address (Username)</label>
+                    <input type="email" name="email" id="email" value="" autocomplete="off" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <div class="row mb-1">
+            <div class="col-md-8">
+                <div>
+                    <label class="w-100" for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" value="" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <div class="row mb-1">
+            <div class="col-md-8">
+                <div>
+                    <label class="w-100" for="password">Password</label>
+                    <input type="password" name="password" id="password" autocomplete="off" value="" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-8">
+                <div>
+                    <label class="w-100" for="password-confirm">Confirm Password</label>
+                    <input type="password" name="password_confirm" id="password-confirm" autocomplete="off" value="" class="form-control" />
+                </div>
+            </div>
+        </div>
+        <input type="submit" name="Submit" value="Register" class="btn btn-lg btn-success" role="button"/>
+    </div>
+</form>
+</div>
