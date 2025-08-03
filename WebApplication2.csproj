@@ -12,11 +12,11 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <PackageIcon>FDFLogoIcon.ico</PackageIcon>
+    <PackageIcon>favicon.ico</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="D:\Documents\OldComputerStuff\VB98\FDFLogoIcon.ico">
+    <None Include="wwwroot\favicon.ico">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
