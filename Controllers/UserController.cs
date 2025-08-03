@@ -72,12 +72,33 @@ namespace WebApplication2.Controllers
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", "Home");
             }
             catch
             {
                 return View();
             }
+        }
+
+        [HttpPost]
+        public ActionResult Login(IFormCollection collection)
+        {
+            // not yet implemented
+            return RedirectToAction("Index", "Home");
+        }
+
+        [HttpPost]
+        public ActionResult Logout(IFormCollection collection)
+        {
+            // not yet implemented
+            return RedirectToAction("Index", "Home");
+        }
+
+        [HttpPost]
+        public ActionResult Register(IFormCollection collection)
+        {
+            // not yet implemented
+            return RedirectToAction("Index", "Home");
         }
     }
 }
